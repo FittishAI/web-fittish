@@ -257,7 +257,7 @@ export default function GetInTouch() {
 
           <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/placeholder.svg?height=400&width=1200&text=Map+Location"
+              src="/location.png?height=400&width=1200&text=Map+Location"
               alt="Fittish office location map"
               fill
               className="object-cover"
@@ -266,7 +266,7 @@ export default function GetInTouch() {
             <div className="absolute top-4 left-4 bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-bold text-gray-900">Fittish Headquarters</h3>
               <p className="text-gray-600">
-                123 Fitness Ave, San Francisco, CA 94107
+                12338 Jasper Pointe Way, Castle Pines, CO 80108
               </p>
             </div>
           </div>
