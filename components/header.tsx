@@ -14,7 +14,6 @@ const navigation = [
   { name: "Features", href: "/#features", type: "scroll" },
   { name: "How it works", href: "/#how-it-works", type: "scroll" },
   { name: "Pricing", href: "/#pricing", type: "scroll" },
-  // { name: "Blog", href: "/blog", type: "page" },
   { name: "Contact", href: "/#getintouch", type: "page" },
   // { name: "Pages", href: "/pages", type: "page" },
 ]

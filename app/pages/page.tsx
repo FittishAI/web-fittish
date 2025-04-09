@@ -35,12 +35,6 @@ const pages = [
     link: "/pricing",
   },
   {
-    title: "Blog",
-    description: "Get the latest fitness tips, nutrition advice, and updates from the Fittish team.",
-    image: "/placeholder.svg?height=300&width=400&text=Blog+Page",
-    link: "/blog",
-  },
-  {
     title: "Contact",
     description: "Reach out to the Fittish team for support or inquiries about your fitness journey.",
     image: "/placeholder.svg?height=300&width=400&text=Contact+Page",
