@@ -1,11 +1,11 @@
-let userConfig = undefined
+let userConfig = undefined;
 try {
   // Try to import ESM first
-  userConfig = await import('./v0-user-next.config.mjs')
+  userConfig = await import('./v0-user-next.config.mjs');
 } catch (e) {
   try {
     // Fallback to CJS import
-    userConfig = await import("./v0-user-next.config");
+    userConfig = await import('./v0-user-next.config');
   } catch (innerError) {
     // Ignore error
   }
@@ -20,19 +20,28 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // Set to true for static export to avoid image optimization during build
+    // Enable image optimization for SSR
+    unoptimized: false,  // Make sure images are optimized for SSR
+    domains: ['example.com'], // Add domains of any external images you need
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export', // Static export configuration for Next.js
-  basePath: '/web-fittish', // Set the base path to match your GitHub repository name
-  assetPrefix: '/web-fittish/', // Set asset prefix to match the repository path
 
-  // Add these for correct static asset handling
-  trailingSlash: true, // Ensures URL paths have trailing slashes for static files
+  // No longer need 'target: serverless'
+  // Removed static export configuration
+  output: 'standalone', // Enable standalone for serverless deployment (Netlify)
+
+  // Ensure server-side routing and SSR rendering work
+  basePath: '/web-fittish', // If your app is deployed under this subpath
+  assetPrefix: '/web-fittish', // Set asset prefix if necessary
+
+  // Enable trailing slash if needed for routing
+  trailingSlash: false, // You might want to set to `false` for SSR URLs
+
+  // Additional config can go here
 };
 
 if (userConfig) {

@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "DEPLOY_ENV=GH_PAGES npm run build && gh-pages -d out"
+    "export": "next export",
+    "deploy": "DEPLOY_ENV=GH_PAGES npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
     "@hookform/resolvers": "^3.9.1",
+    "@netlify/plugin-nextjs": "^5.10.4",
     "@radix-ui/react-accordion": "^1.2.4",
     "@radix-ui/react-alert-dialog": "^1.1.7",
     "@radix-ui/react-aspect-ratio": "^1.1.1",
