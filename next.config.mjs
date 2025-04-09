@@ -34,10 +34,7 @@ const nextConfig = {
   // Removed static export configuration
   output: 'standalone', // Enable standalone for serverless deployment (Netlify)
 
-  // Ensure server-side routing and SSR rendering work
-  basePath: '/web-fittish', // If your app is deployed under this subpath
-  assetPrefix: '/web-fittish', // Set asset prefix if necessary
-
+  // Removed basePath and assetPrefix as they are not needed for Netlify
   // Enable trailing slash if needed for routing
   trailingSlash: false, // You might want to set to `false` for SSR URLs
 
