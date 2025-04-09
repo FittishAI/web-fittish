@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-3xl font-bold text-gray-800 mt-8">Contact Us</h2>
             <p className="text-xl text-gray-600">
-              Email: <strong>privacy@fittishapp.com</strong>
+              Email: <strong>contact@fittish.ai</strong>
               <br />
               Mail: Fittish Privacy Team, 123 Fitness Avenue, Suite 100,
               Wellness City, CA 90210, USA

@@ -88,7 +88,7 @@ export default function TermsOfService() {
 
             <h2 className="text-3xl font-bold text-gray-800">Contact Us</h2>
             <p className="text-xl text-gray-600">
-              If you have any questions or concerns regarding these Terms of Service, please contact us at <strong>support@fittishapp.com</strong>.
+              If you have any questions or concerns regarding these Terms of Service, please contact us at <strong>contact@fittish.ai</strong>.
             </p>
           </div>
         </div>

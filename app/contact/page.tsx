@@ -1,16 +1,29 @@
-import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import { Mail, MapPin, Phone, MessageSquare, Clock, CheckCircle } from "lucide-react"
-import Reveal from "@/components/animations/reveal"
-import FadeIn from "@/components/animations/fade-in"
-import Image from "next/image"
+import type { Metadata } from "next";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  MessageSquare,
+  Clock,
+  CheckCircle,
+} from "lucide-react";
+import Reveal from "@/components/animations/reveal";
+import FadeIn from "@/components/animations/fade-in";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Contact Us | Fittish - Fitness App",
   description:
     "Get in touch with the Fittish team. We're here to help with any questions about our fitness and health management app.",
-  keywords: ["contact", "support", "fitness help", "customer service", "Fittish app"],
+  keywords: [
+    "contact",
+    "support",
+    "fitness help",
+    "customer service",
+    "Fittish app",
+  ],
   alternates: {
     canonical: "https://fittish.ai/contact",
   },
@@ -38,12 +51,11 @@ export const metadata: Metadata = {
       "Get in touch with the Fittish team. We're here to help with any questions about our fitness and health management app.",
     images: ["/og-contact.jpg"],
   },
-}
+};
 
 export default function ContactPage() {
   return (
     <>
-
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 bg-gradient-to-b from-indigo-50 to-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -52,9 +64,12 @@ export default function ContactPage() {
         </div>
         <div className="container relative">
           <Reveal>
-            <h1 className="text-4xl md:text-5xl font-bold text-center">Get in Touch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-center">
+              Get in Touch
+            </h1>
             <p className="mt-4 text-xl text-center text-gray-600 max-w-2xl mx-auto">
-              Have questions or need help? Our team is ready to assist you with any inquiries.
+              Have questions or need help? Our team is ready to assist you with
+              any inquiries.
             </p>
           </Reveal>
         </div>
@@ -68,10 +83,13 @@ export default function ContactPage() {
             <div>
               <FadeIn delay={0.1} direction="left">
                 <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                  <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">
+                    Contact Information
+                  </h2>
                   <p className="mt-4 text-gray-600">
-                    Our support team is available Monday through Friday from 9am to 5pm EST. We strive to respond to all
-                    inquiries within 24 hours.
+                    Our support team is available Monday through Friday from 9am
+                    to 5pm EST. We strive to respond to all inquiries within 24
+                    hours.
                   </p>
 
                   <div className="mt-8 space-y-6">
@@ -80,8 +98,12 @@ export default function ContactPage() {
                         <MapPin className="h-5 w-5 text-indigo-600" />
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-lg font-medium text-gray-900">Our Location</h3>
-                        <p className="mt-1 text-gray-600">123 Fitness Ave, San Francisco, CA 94107</p>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          Our Location
+                        </h3>
+                        <p className="mt-1 text-gray-600">
+                          12338 Jasper Pointe Way, Castle Pines, CO 80108
+                        </p>
                       </div>
                     </div>
 
@@ -90,10 +112,15 @@ export default function ContactPage() {
                         <Mail className="h-5 w-5 text-indigo-600" />
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-lg font-medium text-gray-900">Email Us</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          Email Us
+                        </h3>
                         <p className="mt-1 text-gray-600">
-                          <a href="mailto:support@Fittishapp.com" className="hover:text-indigo-600 transition-colors">
-                            support@Fittishapp.com
+                          <a
+                            href="mailto:contact@fittish.ai"
+                            className="hover:text-indigo-600 transition-colors"
+                          >
+                            contact@fittish.ai
                           </a>
                         </p>
                       </div>
@@ -104,10 +131,15 @@ export default function ContactPage() {
                         <Phone className="h-5 w-5 text-indigo-600" />
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-lg font-medium text-gray-900">Call Us</h3>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          Call Us
+                        </h3>
                         <p className="mt-1 text-gray-600">
-                          <a href="tel:+15551234567" className="hover:text-indigo-600 transition-colors">
-                            +1 (555) 123-4567
+                          <a
+                            href="tel:+16306967705"
+                            className="hover:text-indigo-600 transition-colors"
+                          >
+                            +1 630-696-7705
                           </a>
                         </p>
                       </div>
@@ -118,15 +150,23 @@ export default function ContactPage() {
                         <Clock className="h-5 w-5 text-indigo-600" />
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-lg font-medium text-gray-900">Business Hours</h3>
-                        <p className="mt-1 text-gray-600">Monday - Friday: 9am - 5pm EST</p>
-                        <p className="text-gray-600">Saturday - Sunday: Closed</p>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          Business Hours
+                        </h3>
+                        <p className="mt-1 text-gray-600">
+                          Monday - Friday: 9am - 5pm EST
+                        </p>
+                        <p className="text-gray-600">
+                          Saturday - Sunday: Closed
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-10">
-                    <h3 className="text-lg font-medium text-gray-900">Connect With Us</h3>
+                    <h3 className="text-lg font-medium text-gray-900">
+                      Connect With Us
+                    </h3>
                     <div className="mt-4 flex space-x-4">
                       <a
                         href="#"
@@ -208,9 +248,12 @@ export default function ContactPage() {
                       <MessageSquare className="h-6 w-6 text-indigo-600" />
                     </div>
                     <div className="ml-4">
-                      <h3 className="text-xl font-bold text-gray-900">Need immediate assistance?</h3>
+                      <h3 className="text-xl font-bold text-gray-900">
+                        Need immediate assistance?
+                      </h3>
                       <p className="mt-2 text-gray-600">
-                        Our live chat support is available during business hours for quick responses to your questions.
+                        Our live chat support is available during business hours
+                        for quick responses to your questions.
                       </p>
                       <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
                         Start Live Chat
@@ -224,15 +267,21 @@ export default function ContactPage() {
             {/* Contact Form */}
             <FadeIn delay={0.2} direction="right">
               <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900">Send us a message</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Send us a message
+                </h2>
                 <p className="mt-2 text-gray-600">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we'll get back to you as soon as
+                  possible.
                 </p>
 
                 <form className="mt-8 space-y-6">
                   <div className="grid gap-6 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                      <label
+                        htmlFor="first-name"
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         First name
                       </label>
                       <input
@@ -245,7 +294,10 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
+                      <label
+                        htmlFor="last-name"
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Last name
                       </label>
                       <input
@@ -260,7 +312,10 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
                       Email
                     </label>
                     <input
@@ -274,7 +329,10 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700"
+                    >
                       Phone
                     </label>
                     <input
@@ -287,7 +345,10 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700"
+                    >
                       Subject
                     </label>
                     <select
@@ -299,13 +360,18 @@ export default function ContactPage() {
                       <option value="general">General Inquiry</option>
                       <option value="support">Technical Support</option>
                       <option value="billing">Billing Question</option>
-                      <option value="partnership">Partnership Opportunity</option>
+                      <option value="partnership">
+                        Partnership Opportunity
+                      </option>
                       <option value="other">Other</option>
                     </select>
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700"
+                    >
                       Message
                     </label>
                     <textarea
@@ -328,9 +394,15 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="ml-3 text-sm">
-                      <label htmlFor="privacy" className="font-medium text-gray-700">
+                      <label
+                        htmlFor="privacy"
+                        className="font-medium text-gray-700"
+                      >
                         I agree to the{" "}
-                        <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                        <a
+                          href="#"
+                          className="text-indigo-600 hover:text-indigo-500"
+                        >
                           privacy policy
                         </a>
                       </label>
@@ -372,7 +444,9 @@ export default function ContactPage() {
             <div className="absolute inset-0 bg-indigo-900/10"></div>
             <div className="absolute top-4 left-4 bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-bold text-gray-900">Fittish Headquarters</h3>
-              <p className="text-gray-600">123 Fitness Ave, San Francisco, CA 94107</p>
+              <p className="text-gray-600">
+                123 Fitness Ave, San Francisco, CA 94107
+              </p>
             </div>
           </div>
         </div>
@@ -406,7 +480,8 @@ export default function ContactPage() {
                   "You can request a demo through our contact form or by emailing info@Fittishapp.com. One of our product specialists will get in touch to schedule a convenient time.",
               },
               {
-                question: "What information should I include in my support request?",
+                question:
+                  "What information should I include in my support request?",
                 answer:
                   "To help us assist you more efficiently, please include your account email, a detailed description of the issue, any error messages you've received, and steps to reproduce the problem if applicable.",
               },
@@ -432,7 +507,9 @@ export default function ContactPage() {
                     <CheckCircle className="h-4 w-4 text-indigo-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">{faq.question}</h3>
+                    <h3 className="text-lg font-medium text-gray-900">
+                      {faq.question}
+                    </h3>
                     <p className="mt-2 text-gray-600">{faq.answer}</p>
                   </div>
                 </div>
@@ -447,9 +524,12 @@ export default function ContactPage() {
         <div className="container">
           <div className="text-center">
             <Reveal>
-              <h2 className="text-3xl font-bold text-white">Ready to get started?</h2>
+              <h2 className="text-3xl font-bold text-white">
+                Ready to get started?
+              </h2>
               <p className="mt-4 text-xl text-indigo-100 max-w-2xl mx-auto">
-                Join thousands of satisfied customers who are already using Fittish to manage their fitness goals.
+                Join thousands of satisfied customers who are already using
+                Fittish to manage their fitness goals.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <a
@@ -469,7 +549,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
     </>
-  )
+  );
 }
