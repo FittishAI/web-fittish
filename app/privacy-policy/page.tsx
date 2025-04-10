@@ -112,8 +112,7 @@ export default function PrivacyPolicy() {
             <p className="text-xl text-gray-600">
               Email: <strong>contact@fittish.ai</strong>
               <br />
-              Mail: Fittish Privacy Team, 123 Fitness Avenue, Suite 100,
-              Wellness City, CA 90210, USA
+              Mail: 12338 Jasper Pointe Way, Castle Pines, CO 80108
             </p>
           </div>
         </div>

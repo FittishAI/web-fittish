@@ -80,16 +80,18 @@ export default function Hero() {
             </Reveal> */}
           </div>
           <FloatAnimation className="relative flex justify-center">
-            <div className="relative h-[450px] w-[450px] overflow-hidden rounded-full bg-indigo-100/80">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=300&width=300&text=App+Screenshot"
-                  width={300}
-                  height={300}
-                  alt="App screenshot"
-                  className="h-auto w-auto object-contain"
-                  priority
-                />
+          <div className="relative h-[440px] w-[450px] rounded-4xl bg-transparent">
+          <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+  src="/image.svg"
+  width={300}
+  height={300}
+  alt="App screenshot"
+  className="h-auto w-auto object-cover rounded-xl transition-transform duration-500 hover:scale-105"
+  priority
+/>
+
+
               </div>
             </div>
           </FloatAnimation>

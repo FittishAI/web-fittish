@@ -246,7 +246,7 @@ export default function GetInTouch() {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container">
           <Reveal className="text-center mb-12">
             <h2 className="text-3xl font-bold">Our Location</h2>
@@ -271,7 +271,7 @@ export default function GetInTouch() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section id="faq" className="py-16">
@@ -293,12 +293,12 @@ export default function GetInTouch() {
               {
                 question: "Do you offer phone support?",
                 answer:
-                  "Yes, our customer support team is available by phone Monday through Friday from 9am to 5pm EST. You can reach us at +1 (555) 123-4567.",
+                  "Yes, our customer support team is available by phone Monday through Friday from 9am to 5pm EST. You can reach us at +1 630-696-7705.",
               },
               {
                 question: "Can I schedule a demo of your product?",
                 answer:
-                  "You can request a demo through our contact form or by emailing info@Fittishapp.com. One of our product specialists will get in touch to schedule a convenient time.",
+                  "You can request a demo through our contact form or by emailing contact@fittish.ai. One of our product specialists will get in touch to schedule a convenient time.",
               },
               {
                 question:
@@ -314,7 +314,7 @@ export default function GetInTouch() {
               {
                 question: "How can I report a bug or suggest a feature?",
                 answer:
-                  "We welcome your feedback! You can report bugs or suggest features through our contact form, by emailing support@Fittishapp.com, or through the feedback option in your account dashboard.",
+                  "We welcome your feedback! You can report bugs or suggest features through our contact form, by emailing contact@fittish.ai, or through the feedback option in your account dashboard.",
               },
             ].map((faq, index) => (
               <FadeIn

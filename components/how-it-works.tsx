@@ -8,21 +8,21 @@ import ParallaxSection from "@/components/animations/parallax-section"
 const steps = [
   {
     id: "01",
-    name: "Download the app",
+    name: "Open the app",
     description: "Get Fittish from the App Store or Google Play Store to start your fitness journey.",
-    image: "/placeholder.svg?height=400&width=400&text=Step+1", // Replace with a fitness-related image
+    image: "/image_1.svg", // Replace with a fitness-related image
   },
   {
     id: "02",
     name: "Create your profile",
     description: "Sign up, set your fitness goals, and personalize your meal and workout plans.",
-    image: "/placeholder.svg?height=400&width=400&text=Step+2", // Replace with a fitness-related image
+    image: "/image_2.svg", // Replace with a fitness-related image
   },
   {
     id: "03",
     name: "Start tracking progress",
     description: "Track your meals, workouts, and health metrics, and get AI-driven insights to stay on track.",
-    image: "/placeholder.svg?height=400&width=400&text=Step+3", // Replace with a fitness-related image
+    image: "/image_3.svg", // Replace with a fitness-related image
   },
 ]
 
@@ -58,16 +58,17 @@ export default function HowItWorks() {
                 <ParallaxSection
                   speed={0.1}
                   direction="up"
-                  className="mb-6 h-64 w-64 overflow-hidden rounded-xl bg-gray-100"
+                  className="mb-6 h-[340px] w-[180px] overflow-hidden rounded-xl bg-gray-100"
                 >
                   <Image
                     src={step.image || "/placeholder.svg"}
                     alt={step.name}
-                    width={400}
-                    height={400}
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
-                  />
+                    width={180}
+                    height={340}
+                    className="h-full w-full object-contain transition-transform duration-700 hover:scale-105"
+                    />
                 </ParallaxSection>
+
                 <h3 className="text-xl font-bold text-gray-900">{step.name}</h3>
                 <p className="mt-2 text-base text-gray-600">{step.description}</p>
               </motion.div>
